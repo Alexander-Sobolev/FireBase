@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		B4255FE2267664A000C958DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255FE1267664A000C958DC /* AppDelegate.swift */; };
 		B4255FE4267664A000C958DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255FE3267664A000C958DC /* SceneDelegate.swift */; };
-		B4255FE6267664A000C958DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255FE5267664A000C958DC /* ViewController.swift */; };
+		B4255FE6267664A000C958DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255FE5267664A000C958DC /* LoginViewController.swift */; };
 		B4255FE9267664A000C958DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4255FE7267664A000C958DC /* Main.storyboard */; };
 		B4255FEB267664A100C958DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4255FEA267664A100C958DC /* Assets.xcassets */; };
 		B4255FEE267664A100C958DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4255FEC267664A100C958DC /* LaunchScreen.storyboard */; };
+		B4255FF626766E7100C958DC /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4255FF526766E7100C958DC /* TasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4255FDE267664A000C958DC /* FireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4255FE1267664A000C958DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4255FE3267664A000C958DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4255FE5267664A000C958DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4255FE5267664A000C958DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B4255FE8267664A000C958DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4255FEA267664A100C958DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4255FED267664A100C958DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4255FEF267664A100C958DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4255FF526766E7100C958DC /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		B4255FE0267664A000C958DC /* FireBase */ = {
 			isa = PBXGroup;
 			children = (
+				B4255FE5267664A000C958DC /* LoginViewController.swift */,
+				B4255FF526766E7100C958DC /* TasksViewController.swift */,
 				B4255FE1267664A000C958DC /* AppDelegate.swift */,
 				B4255FE3267664A000C958DC /* SceneDelegate.swift */,
-				B4255FE5267664A000C958DC /* ViewController.swift */,
 				B4255FE7267664A000C958DC /* Main.storyboard */,
 				B4255FEA267664A100C958DC /* Assets.xcassets */,
 				B4255FEC267664A100C958DC /* LaunchScreen.storyboard */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4255FE6267664A000C958DC /* ViewController.swift in Sources */,
+				B4255FE6267664A000C958DC /* LoginViewController.swift in Sources */,
+				B4255FF626766E7100C958DC /* TasksViewController.swift in Sources */,
 				B4255FE2267664A000C958DC /* AppDelegate.swift in Sources */,
 				B4255FE4267664A000C958DC /* SceneDelegate.swift in Sources */,
 			);
