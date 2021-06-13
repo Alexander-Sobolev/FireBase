@@ -66,6 +66,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <state key="normal" title="Login"/>
                                                 <connections>
+                                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Pb-Uq-g2o"/>
                                                     <segue destination="BNN-Wi-MzI" kind="show" identifier="tasksSegue" id="yGw-UO-hyb"/>
                                                 </connections>
                                             </button>
@@ -74,6 +75,9 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Register"/>
+                                                <connections>
+                                                    <action selector="registerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ye5-Hb-SGZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -101,6 +105,11 @@
                             <constraint firstItem="usg-C8-d6Y" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bhB-nb-1DC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="lE8-J6-nST" id="kar-WG-9Ix"/>
+                        <outlet property="passwordTextField" destination="WX3-bh-oEj" id="s3V-QB-qVE"/>
+                        <outlet property="warnLabel" destination="Km2-yx-2Iy" id="gE8-6S-qG2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,7 +118,7 @@
         <!--Tasks-->
         <scene sceneID="YLw-Un-kMr">
             <objects>
-                <viewController id="OvY-w1-9BU" sceneMemberID="viewController">
+                <viewController id="OvY-w1-9BU" customClass="TasksViewController" customModule="FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OgU-ua-VLV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,6 +138,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="OvY-w1-9BU" id="aMS-0i-9Id"/>
+                                    <outlet property="delegate" destination="OvY-w1-9BU" id="xjL-bi-gdW"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dqI-wE-ySH"/>
@@ -141,8 +154,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="wij-x6-bIw">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rud-yh-l04"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rud-yh-l04">
+                            <connections>
+                                <action selector="addTapped:" destination="OvY-w1-9BU" id="Hzh-0j-eUB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tabelView" destination="9zc-Jb-ykQ" id="DYb-gC-aJC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKI-Oi-bJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

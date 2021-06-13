@@ -58,16 +58,32 @@
 		B4255FE0267664A000C958DC /* FireBase */ = {
 			isa = PBXGroup;
 			children = (
-				B4255FE5267664A000C958DC /* LoginViewController.swift */,
-				B4255FF526766E7100C958DC /* TasksViewController.swift */,
+				B4255FF826766F3100C958DC /* Controllers */,
+				B4255FF726766F0100C958DC /* Supporting Files */,
+				B4255FEF267664A100C958DC /* Info.plist */,
+			);
+			path = FireBase;
+			sourceTree = "<group>";
+		};
+		B4255FF726766F0100C958DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				B4255FE1267664A000C958DC /* AppDelegate.swift */,
 				B4255FE3267664A000C958DC /* SceneDelegate.swift */,
 				B4255FE7267664A000C958DC /* Main.storyboard */,
 				B4255FEA267664A100C958DC /* Assets.xcassets */,
 				B4255FEC267664A100C958DC /* LaunchScreen.storyboard */,
-				B4255FEF267664A100C958DC /* Info.plist */,
 			);
-			path = FireBase;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4255FF826766F3100C958DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4255FE5267664A000C958DC /* LoginViewController.swift */,
+				B4255FF526766E7100C958DC /* TasksViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
